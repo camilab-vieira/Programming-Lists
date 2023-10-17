@@ -1,0 +1,34 @@
+Caso 1:
+    x10 = 0xffffffff;
+    x11 = 0xffffffff;
+    after x11 = 0xffffffff;
+     
+Caso 2:
+    x10 = 0xffffffff;
+    x11 = 0x0;
+    after x11 = 0xff000000;
+
+Caso 3:
+    x10 = 0x0;
+    x11 = 0xffffffff;
+    after x11 = 0x00ffffff;
+
+Caso 4:
+    x10 = 0x00ff00ff;
+    x11 = 0xff00ff00;
+    after x11 = 0x0000ff00;
+
+Caso 5:
+    x10 = 0xff00ff00;
+    x11 = 0x00ff00ff;
+    after x11 = 0xffff00ff;
+
+Caso 6:
+    x10 = 0xfff00ff0;
+    x11 = 0xf0f000ff;
+    after x11 = 0x0ff000ff
+
+Caso 7:
+    x10 = 0x300;
+    x11 = 0xf;
+    after x11 = 0x300000f

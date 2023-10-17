@@ -1,0 +1,9 @@
+Pino A0 para leitura analogica
+
+Pinos dos leds:
+Red Left - 8
+Red Right - 9
+Yellow Left - 10
+Yellow Right - 11
+Green Left - 12 
+Green Right - 13

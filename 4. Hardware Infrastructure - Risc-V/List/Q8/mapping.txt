@@ -1,0 +1,19 @@
+Decimal correspondente ao numero binario que representa os segmentos acessos:
+1 - 6
+2 - 27
+3 - 15
+4 - 38
+5 - 45
+6 - 61
+7 - 7
+8 - 63
+9 - 47
+
+Pinos dos segmentos:
+A - 2
+B - 3
+C - 4
+D - 5
+E - 6
+F - 7
+G - 13
