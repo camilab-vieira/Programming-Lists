@@ -1,0 +1,10 @@
+Durante o recesso, Kennedy teve a ideia de criar um jogo de corrida e veio pedir ajuda para a turma de PLC do CIn para desenvolvê-la! Portanto, ele precisa, antes de tudo, de uma classe Game que representa o jogo e tem como características uma lista de carros possíveis de serem escolhidos, assim como os comportamentos de adicionar e remover carros do jogo de acordo com seu ID.
+Os carros são essencialmente representados por uma classe Car que possui ID (String), velocidade máxima (double) e potência (double). No entanto, considere que durante o jogo, o jogador poderá trocar o carro que utilizará para alguns mais sofisticados, podendo ter carros conversíveis, de luxo, esportivos, híbridos e outros.
+Dito isso, Kennedy gostaria de que ao menos o carro híbrido já fosse possível de ser utilizado pelo usuário, possuindo além das características do carro simples, o comportamento específico de se transformar. Ou seja, o mesmo pode estar ora atuando como carro terrestre, ora atuando como carro aquático, atualizando sua característica de estado atual.
+Observações: um carro não pode ter velocidade máxima ou potência negativa e não é possível remover um carro que já foi removido. Para todos esses casos o seu sistema deverá implementar o lançamento de exceções.
+Na classe Main, adicione um carro simples e um híbrido e realize as seguintes operações:
+Atualize a velocidade máxima de um dos carros do jogo.
+Atualize o estado de um do carro híbrido.
+Remova o carro simples do jogo. 
+Tente remover novamente o mesmo carro. 
+Exiba as características dos carros restantes na lista.

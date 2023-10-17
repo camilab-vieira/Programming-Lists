@@ -1,0 +1,18 @@
+Suponha que você está desenvolvendo um sistema para gestão de um supermercado voltado para administração de departamentos e produtos com base em um banco de dados. Nesse contexto, você pretende usar os princípios de orientação a objeto para reutilizar e modularizar da melhor forma possível o seu código, incluindo portanto o uso de generics.
+Implemente um padrão de serviço que representa um banco de dados, o qual possui os métodos para adicionar (add), remover (remove) e atualizar (update) um item, assim como para listar todos os itens (list). Note que todos os comportamentos são respectivos à entidade que o banco de dados irá gerenciar. Ou seja, esses métodos devem conseguir manipular qualquer classe que seja uma extensão de uma classe base Data, a qual possui como atributo um ID (String) que não pode ser modificado.
+Para a gestão dos produtos, crie o banco de dados de produtos, para a gestão dos departamentos, crie o banco de dados do departamento. O primeiro deve possuir uma lista de Product (List<Product>) e o segundo uma lista de Departament (List<Department>). Ademais, cada banco de dados deve ter seu identificador único (String). Ou seja, qualquer instância dessas classes deverá operar com o mesmo identificador (imodificável).
+Um produto é caracterizado por ID (String), nome (String), quantidade de produto (int) e um ID correspondente ao departamento associado (String). Enquanto isso, um departamento possui um ID (String) e nome (String)..
+Observações: um produto não pode ser adicionado ao banco de dados de produtos caso o seu respectivo departamento não exista no banco de dados de departamentos. Além disso, ao remover um departamento, todos os produtos associados a esse departamento devem ser removidos do banco de dados de produtos. 
+Na aplicação Main realize as interações descritas abaixo, considerando que inicialmente os bancos de dados estão vazios.
+Tente adicionar um produto (“00”, “Sabonete Nivel”, 10, “0a”) no banco de dados. 
+Adicione o departamento (“0a”, “Higiene Pessoal”) no banco de dados.
+Tente adicionar o produto (“00”, “Sabonete Nivel”, 10, “0a”) novamente. 
+Adicione um outro produto (“01”, “Shampoo Aussie”, 20, “0a”).
+Adicione o departamento (“0b”, “Fitness”);
+Atualize o nome do produto “01” para “Shampoo Aussie 90g”.
+Adicione o produto (“02”, “Whey Max 900g”, 5, “0b”); 
+Remova o produto de ID “00”.
+Liste todos os produtos existentes no banco de dados de produtos que estão relacionados ao departamento “0a”.
+Remova o departamento “0a” .
+Liste todos os departamentos existentes no banco de dados de departamentos.
+Liste todos os produtos existentes no banco de dados de produtos.
