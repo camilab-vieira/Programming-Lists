@@ -1,0 +1,483 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Somador
+# storage
+db|Projeto_1.(1).cnf
+db|Projeto_1.(1).cnf
+# case_insensitive
+# source_file
+sumesub|somador.bdf
+bfdc28d02485e8b317f2753aeaa5ace
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComplementoDeDois:inst13|Somador_e_Subtrator:inst|Somador:inst12
+ComplementoDeDois:inst13|Somador_e_Subtrator:inst|Somador:inst10
+ComplementoDeDois:inst13|Somador_e_Subtrator:inst|Somador:inst8
+ComplementoDeDois:inst13|Somador_e_Subtrator:inst|Somador:inst
+ComplementoDeDois:inst13|Somador:inst5
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador:inst5
+SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst12
+SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst10
+SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst8
+SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador:inst5
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Somador_e_Subtrator
+# storage
+db|Projeto_1.(2).cnf
+db|Projeto_1.(2).cnf
+# case_insensitive
+# source_file
+sumesub|somador_e_subtrator.bdf
+d776a73d2431d43272edfa863ac3d7de
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComplementoDeDois:inst13|Somador_e_Subtrator:inst
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+SumESub:inst1|Somador_e_Subtrator:inst2
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+}
+# macro_sequence
+
+# end
+# entity
+MuxBool
+# storage
+db|Projeto_1.(4).cnf
+db|Projeto_1.(4).cnf
+# case_insensitive
+# source_file
+mux|muxbool.bdf
+125cb5b488444dd21f9e8f359c5f873
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MuxBool:inst
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQueSinal
+# storage
+db|Projeto_1.(6).cnf
+db|Projeto_1.(6).cnf
+# case_insensitive
+# source_file
+igualmaiormenor|maiorquesinal.bdf
+1524389eacf233198e4d6ab51bcbfd9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst2|MaiorQueSinal:inst41
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQueBit
+# storage
+db|Projeto_1.(7).cnf
+db|Projeto_1.(7).cnf
+# case_insensitive
+# source_file
+igualmaiormenor|maiorquebit.bdf
+26268b8a5772629396a35123f20cb7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst2|MaiorQueBit:inst27
+Comparador:inst2|MaiorQueBit:inst26
+Comparador:inst2|MaiorQueBit:inst25
+Comparador:inst2|MaiorQueBit:inst28
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5|MaiorQueBit:inst4
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5|MaiorQueBit:inst3
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5|MaiorQueBit:inst2
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5|MaiorQueBit:inst1
+}
+# macro_sequence
+
+# end
+# entity
+IgualdadeComp
+# storage
+db|Projeto_1.(8).cnf
+db|Projeto_1.(8).cnf
+# case_insensitive
+# source_file
+igualmaiormenor|igualdadecomp.bdf
+cdce86f664d06b2afb7fa0c25d8a1970
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst2|IgualdadeComp:inst19
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5|IgualdadeComp:inst
+}
+# macro_sequence
+
+# end
+# entity
+MuxBit
+# storage
+db|Projeto_1.(10).cnf
+db|Projeto_1.(10).cnf
+# case_insensitive
+# source_file
+mux|muxbit.bdf
+fe29cb9a50b114b5cb6acf8096c420cf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux6Bits:inst3|MuxBit:inst6
+Mux6Bits:inst3|MuxBit:inst7
+Mux6Bits:inst3|MuxBit:inst8
+Mux6Bits:inst3|MuxBit:inst9
+Mux6Bits:inst3|MuxBit:inst11
+Mux6Bits:inst3|MuxBit:inst10
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1
+# storage
+db|Projeto_1.(15).cnf
+db|Projeto_1.(15).cnf
+# case_insensitive
+# source_file
+sumesub|mux2x1.bdf
+b0fb256d52b4c7c4bdd3e41a2f4d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1|sinalSumESub:inst6|Mux2x1:inst7
+SumESub:inst1|sinalSumESub:inst6|Mux2x1:inst6
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst6
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst7
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst8
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst9
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst11
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst6
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst7
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst8
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst9
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst11
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst|Mux2x1:inst6
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst|Mux2x1:inst7
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst|Mux2x1:inst8
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst|Mux2x1:inst9
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst|Mux2x1:inst11
+}
+# macro_sequence
+
+# end
+# entity
+Mux6Bits
+# storage
+db|Projeto_1.(9).cnf
+db|Projeto_1.(9).cnf
+# case_insensitive
+# source_file
+mux|mux6bits.bdf
+ca80b1555c9d50e9ecdeb27c1e4846eb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Mux6Bits:inst3
+}
+# macro_sequence
+
+# end
+# entity
+TESTARMUX2X1
+# storage
+db|Projeto_1.(12).cnf
+db|Projeto_1.(12).cnf
+# case_insensitive
+# source_file
+testarmux2x1.bdf
+7c9a09a13791179287e4347c78e8b1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+OpXor
+# storage
+db|Projeto_1.(16).cnf
+db|Projeto_1.(16).cnf
+# case_insensitive
+# source_file
+opandexor|opxor.bdf
+ea714480ff91b74b65734fa9547a16a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+OpXor:inst12
+}
+# macro_sequence
+
+# end
+# entity
+OpAnd
+# storage
+db|Projeto_1.(11).cnf
+db|Projeto_1.(11).cnf
+# case_insensitive
+# source_file
+opandexor|opand.bdf
+1be7c3964d5afe1cb75b4957cb15791
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+OpAnd:inst15
+}
+# macro_sequence
+
+# end
+# entity
+Comparador
+# storage
+db|Projeto_1.(5).cnf
+db|Projeto_1.(5).cnf
+# case_insensitive
+# source_file
+igualmaiormenor|comparador.bdf
+2987704166bcb74f645f463f8f644fe
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst2
+}
+# macro_sequence
+
+# end
+# entity
+CompModulo
+# storage
+db|Projeto_1.(19).cnf
+db|Projeto_1.(19).cnf
+# case_insensitive
+# source_file
+igualmaiormenor|compmodulo.bdf
+e7f2508ca5b852abdb18fc8e92f111c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5
+}
+# macro_sequence
+
+# end
+# entity
+sinalSumESub
+# storage
+db|Projeto_1.(18).cnf
+db|Projeto_1.(18).cnf
+# case_insensitive
+# source_file
+sumesub|sinalsumesub.bdf
+3c35c0d2525a82e4e1853891633cdd71
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1|sinalSumESub:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Geral
+# storage
+db|Projeto_1.(3).cnf
+db|Projeto_1.(3).cnf
+# case_insensitive
+# source_file
+geral.bdf
+a9217fa349deae9acdef3ccb6c7ee157
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+NegNum
+# storage
+db|Projeto_1.(13).cnf
+db|Projeto_1.(13).cnf
+# case_insensitive
+# source_file
+sumesub|negnum.bdf
+3fe0464657919154e02eb96ddbd36c18
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1|NegNum:inst
+SumESub:inst1|NegNum:inst7
+SumESub:inst1|NegNum:inst8
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1_6Bits
+# storage
+db|Projeto_1.(14).cnf
+db|Projeto_1.(14).cnf
+# case_insensitive
+# source_file
+sumesub|mux2x1_6bits.bdf
+60c49d8688de6b2dd94689a5c3a3daba
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst
+SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst
+SumESub:inst1|NegNum:inst8|Mux2x1_6Bits:inst
+}
+# macro_sequence
+
+# end
+# entity
+ComplementoDeDois
+# storage
+db|Projeto_1.(17).cnf
+db|Projeto_1.(17).cnf
+# case_insensitive
+# source_file
+sumesub|complementodedois.bdf
+416f75715f6c27263f5676fa188981f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ComplementoDeDois:inst13
+SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1
+SumESub:inst1|NegNum:inst7|ComplementoDeDois:inst1
+SumESub:inst1|NegNum:inst8|ComplementoDeDois:inst1
+}
+# macro_sequence
+
+# end
+# entity
+SumESub
+# storage
+db|Projeto_1.(0).cnf
+db|Projeto_1.(0).cnf
+# case_insensitive
+# source_file
+sumesub|sumesub.bdf
+b09b9622fb797030b2eda7359dc199d5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SumESub:inst1
+}
+# macro_sequence
+
+# end
+# complete
+

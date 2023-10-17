@@ -1,0 +1,148 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 23:27:58  March 15, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Projeto_1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY Geral
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:27:58  MARCH 15, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name MISC_FILE "D:/Documents/EC/2°/SD/Projeto 1/Projeto_1.dpf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AA24 -to A[0]
+set_location_assignment PIN_AA23 -to A[1]
+set_location_assignment PIN_AA22 -to A[2]
+set_location_assignment PIN_Y24 -to A[3]
+set_location_assignment PIN_Y23 -to A[4]
+set_location_assignment PIN_AB27 -to B[4]
+set_location_assignment PIN_AD27 -to B[3]
+set_location_assignment PIN_AC27 -to B[2]
+set_location_assignment PIN_AC28 -to B[1]
+set_location_assignment PIN_AB28 -to B[0]
+set_location_assignment PIN_AC24 -to S[0]
+set_location_assignment PIN_AB25 -to S[1]
+set_location_assignment PIN_AC25 -to S[2]
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "SumESub/Waveform ComplementoDeDois2.vwf"
+set_location_assignment PIN_E21 -to S1[0]
+set_location_assignment PIN_E22 -to S1[1]
+set_location_assignment PIN_E25 -to S1[2]
+set_location_assignment PIN_E24 -to S1[3]
+set_location_assignment PIN_H21 -to S1[4]
+set_location_assignment PIN_G20 -to S1[5]
+set_location_assignment PIN_F17 -to BOOL
+set_location_assignment PIN_H15 -to E2[4]
+set_location_assignment PIN_G16 -to E2[3]
+set_location_assignment PIN_G15 -to E2[2]
+set_location_assignment PIN_F15 -to E2[1]
+set_location_assignment PIN_H17 -to E2[0]
+set_location_assignment PIN_G19 -to E1[0]
+set_location_assignment PIN_F19 -to E1[1]
+set_location_assignment PIN_E19 -to E1[2]
+set_location_assignment PIN_F21 -to E1[3]
+set_location_assignment PIN_F18 -to E1[4]
+set_location_assignment PIN_J15 -to E3[0]
+set_location_assignment PIN_G17 -to E3[1]
+set_location_assignment PIN_J17 -to E3[2]
+set_global_assignment -name BSF_FILE "IgualMaiorMenor/Bloco Comparador.bsf"
+set_global_assignment -name BDF_FILE IgualMaiorMenor/Comparador.bdf
+set_global_assignment -name BSF_FILE "IgualMaiorMenor/Bloco Igualdade.bsf"
+set_global_assignment -name BDF_FILE IgualMaiorMenor/Igualdade.bdf
+set_global_assignment -name BSF_FILE "OpAndEXor/Bloco And.bsf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE "IgualMaiorMenor/Waveform Igualdade.vwf"
+set_global_assignment -name BDF_FILE OpAndEXor/OpAnd.bdf
+set_global_assignment -name BDF_FILE OpAndEXor/OpXor.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE "OpAndEXor/Waveform And.vwf"
+set_global_assignment -name BSF_FILE "SumESub/Bloco ComplementoDeDois.bsf"
+set_global_assignment -name BSF_FILE "SumESub/Bloco Somador_e_Subtrator.bsf"
+set_global_assignment -name BSF_FILE "SumESub/Bloco Somador.bsf"
+set_global_assignment -name BDF_FILE SumESub/Somador.bdf
+set_global_assignment -name BDF_FILE SumESub/Somador_e_Subtrator.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SumESub/WaveformSomador.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SumESub/WaveformSumESub.vwf
+set_global_assignment -name BSF_FILE "Mux/Bloco MuxBit.bsf"
+set_global_assignment -name BSF_FILE "Mux/Bloco MuxBool.bsf"
+set_global_assignment -name BDF_FILE Mux/MuxBit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Mux/WaveformMuxBit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformMux.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Mux/WaveformMux.vwf
+set_global_assignment -name BDF_FILE Mux/MuxBool.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Mux/WaveformMuxBool.vwf
+set_global_assignment -name BDF_FILE Geral.bdf
+set_global_assignment -name BDF_FILE SumESub/ComplementoDeDois.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE "SumESub/Waveform ComplementoDeDois.vwf"
+set_global_assignment -name BDF_FILE IgualMaiorMenor/MenorQue.bdf
+set_global_assignment -name BDF_FILE testeAltera.bdf
+set_global_assignment -name BDF_FILE SumESub/teste.bdf
+set_global_assignment -name BDF_FILE SumESub/Mux2x1.bdf
+set_global_assignment -name BDF_FILE SumESub/Mux2x1_6Bits.bdf
+set_global_assignment -name BDF_FILE Mux/Mux6Bits.bdf
+set_global_assignment -name BDF_FILE IgualMaiorMenor/MaiorQueBit.bdf
+set_global_assignment -name BDF_FILE IgualMaiorMenor/MaiorQueSinal.bdf
+set_global_assignment -name BDF_FILE IgualMaiorMenor/IgualdadeComp.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE SumESub/Comp.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE "SumESub/Waveform ComplementoDeDois2.vwf"
+set_global_assignment -name BDF_FILE SumESub/NegNum.bdf
+set_global_assignment -name BDF_FILE SumESub/SumESub.bdf
+set_global_assignment -name BDF_FILE TESTARMUX2X1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TESTEMUX2X1.vwf
+set_global_assignment -name BDF_FILE IgualMaiorMenor/CompModulo.bdf
+set_global_assignment -name BDF_FILE SumESub/testeSOMA.bdf
+set_global_assignment -name BDF_FILE SumESub/sinalSumESub.bdf
+set_location_assignment PIN_AC26 -to 5oBit
+set_location_assignment PIN_AE18 -to S3[4]
+set_location_assignment PIN_Y19 -to S3[3]
+set_location_assignment PIN_W28 -to S3[2]
+set_location_assignment PIN_U24 -to S3[1]
+set_location_assignment PIN_H22 -to S3[0]
+set_location_assignment PIN_AD26 -to Op
+set_location_assignment PIN_AA14 -to S3[5]
+set_location_assignment PIN_AC17 -to sinal
+set_location_assignment PIN_E18 -to Cout
+set_global_assignment -name BDF_FILE Display/a2D.bdf
+set_global_assignment -name BDF_FILE Display/b2D.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

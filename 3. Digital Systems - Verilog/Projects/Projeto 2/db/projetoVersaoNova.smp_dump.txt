@@ -1,0 +1,7 @@
+
+State Machine - |cronometro|fsm:comb_3|estadoAtual
+Name estadoAtual.parado estadoAtual.pausado estadoAtual.contando estadoAtual.reset 
+estadoAtual.reset 0 0 0 0 
+estadoAtual.contando 0 0 1 1 
+estadoAtual.pausado 0 1 0 1 
+estadoAtual.parado 1 0 0 1 

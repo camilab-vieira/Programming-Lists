@@ -1,0 +1,129 @@
+module fsm(clk, btn, contaTempo, pausaDisplay, zeraTempo, led);
+
+input clk;
+input [3:0] btn;
+reg [3:0] pressed = 0;
+output reg contaTempo;
+output reg pausaDisplay;
+output reg zeraTempo;
+output reg [1:0] led;
+
+parameter decsegundo = 5000000;
+parameter reset = 0, contando = 1, pausado = 2, parado = 3;
+
+reg[1:0]estadoAtual;
+
+//parte combinacional
+always @(estadoAtual) begin
+	case(estadoAtual)
+	
+		reset: begin
+			contaTempo <= 0;
+			pausaDisplay <= 0;
+			zeraTempo <= 1;
+			led[3] <= 1;
+			led[2] <= 0;
+			led[1] <= 0;
+			led[0] <= 0;
+			
+		end
+		
+		contando: begin
+			contaTempo <= 1;
+			pausaDisplay <= 0;
+			zeraTempo <= 0;
+			led[3] <= 0;
+			led[2] <= 1;
+			led[1] <= 0;
+			led[0] <= 0;
+			
+		end
+		
+		pausado: begin
+			contaTempo <= 1;
+			pausaDisplay <= 1;
+			zeraTempo <= 0;
+			led[3] <= 0;
+			led[2] <= 0;
+			led[1] <= 1;
+			led[0] <= 0;
+			
+		end
+		
+		parado: begin
+			contaTempo <= 0;
+			pausaDisplay <= 0;
+			zeraTempo <= 0;
+			led[3] <= 0;
+			led[2] <= 0;
+			led[1] <= 0;
+			led[0] <= 1;
+			
+		end
+		
+	endcase
+end
+
+
+//parte sequencial
+always @(posedge clk)begin
+
+	if(!btn[0]) pressed[0] <= 1; //para
+	if(!btn[1]) pressed[1] <= 1; //pause
+	if(!btn[2]) pressed[2] <= 1; //conta
+	if(!btn[3]) pressed[3] <= 1; //reset
+	
+	if(btn[3] && pressed[3]) begin //todos os estados voltam para o reset
+		estadoAtual <= reset;
+		pressed[3] <= 0;
+	end
+
+	case(estadoAtual)
+		reset: begin
+			if(btn[2] && pressed[2]) begin
+				estadoAtual <= contando;
+				pressed[2] <= 0;
+			end
+			if(btn[0] && pressed[0]) pressed[0] <= 0;
+			if(btn[1] && pressed[1]) pressed[1] <= 0;
+			
+		end
+		
+		contando: begin
+			if(btn[1] && pressed[1]) begin //transicao para a pausa
+				estadoAtual <= pausado;
+				pressed[1] <= 0;
+			end
+			
+			if(btn[0] && pressed[0]) begin //transicao para o para
+				estadoAtual <= parado;
+				pressed[0] <= 0;
+			end
+			if(btn[2] && pressed[2]) pressed[2] <= 0;
+		end
+		
+		pausado: begin
+			if(btn[2] && pressed[2]) begin
+				estadoAtual <= contando;
+				pressed[2] <= 0;
+			end
+			
+			if(btn[0] && pressed[0]) begin
+				estadoAtual <= parado;
+				pressed[0] <= 0;
+			end
+			if(btn[1] && pressed[1]) pressed[1] <= 0;
+		end
+		
+		parado: begin
+			if(btn[2] && pressed[2]) begin
+				estadoAtual <= contando;
+				pressed[2] <= 0;
+			end
+			if(btn[0] && pressed[0]) pressed[0] <= 0;
+			if(btn[1] && pressed[1]) pressed[1] <= 0;
+		end
+	endcase
+end
+
+endmodule

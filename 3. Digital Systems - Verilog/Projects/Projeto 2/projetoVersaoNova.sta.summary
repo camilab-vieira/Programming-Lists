@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fsm:comb_3|estadoAtual.pausado'
+Slack : -27.238
+TNS   : -346.232
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -7.265
+TNS   : -304.167
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : -0.133
+TNS   : -0.278
+
+Type  : Slow 1200mV 85C Model Hold 'fsm:comb_3|estadoAtual.pausado'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -71.105
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fsm:comb_3|estadoAtual.pausado'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fsm:comb_3|estadoAtual.pausado'
+Slack : -24.530
+TNS   : -312.085
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -6.546
+TNS   : -272.907
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : -0.120
+TNS   : -0.312
+
+Type  : Slow 1200mV 0C Model Hold 'fsm:comb_3|estadoAtual.pausado'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -71.105
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fsm:comb_3|estadoAtual.pausado'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fsm:comb_3|estadoAtual.pausado'
+Slack : -12.734
+TNS   : -160.122
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -3.118
+TNS   : -125.057
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.203
+TNS   : -0.629
+
+Type  : Fast 1200mV 0C Model Hold 'fsm:comb_3|estadoAtual.pausado'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -59.166
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fsm:comb_3|estadoAtual.pausado'
+Slack : 0.370
+TNS   : 0.000
+
+------------------------------------------------------------

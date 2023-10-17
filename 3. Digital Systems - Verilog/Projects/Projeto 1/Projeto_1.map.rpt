@@ -1,0 +1,354 @@
+Analysis & Synthesis report for Projeto_1
+Fri Apr 01 16:40:12 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Apr 01 16:40:12 2022        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; Projeto_1                                    ;
+; Top-level Entity Name              ; Geral                                        ;
+; Family                             ; Cyclone IV E                                 ;
+; Total logic elements               ; 58                                           ;
+;     Total combinational functions  ; 58                                           ;
+;     Dedicated logic registers      ; 0                                            ;
+; Total registers                    ; 0                                            ;
+; Total pins                         ; 33                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; Geral              ; Projeto_1          ;
+; Family name                                                                ; Cyclone IV E       ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++-----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                      ;
++-----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+; IgualMaiorMenor/Comparador.bdf    ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/IgualMaiorMenor/Comparador.bdf    ;
+; OpAndEXor/OpAnd.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/OpAndEXor/OpAnd.bdf               ;
+; OpAndEXor/OpXor.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/OpAndEXor/OpXor.bdf               ;
+; SumESub/Somador.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/Somador.bdf               ;
+; SumESub/Somador_e_Subtrator.bdf   ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/Somador_e_Subtrator.bdf   ;
+; Mux/MuxBit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/Mux/MuxBit.bdf                    ;
+; Mux/MuxBool.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/Mux/MuxBool.bdf                   ;
+; Geral.bdf                         ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/Geral.bdf                         ;
+; SumESub/ComplementoDeDois.bdf     ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/ComplementoDeDois.bdf     ;
+; SumESub/Mux2x1.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/Mux2x1.bdf                ;
+; SumESub/Mux2x1_6Bits.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/Mux2x1_6Bits.bdf          ;
+; Mux/Mux6Bits.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/Mux/Mux6Bits.bdf                  ;
+; IgualMaiorMenor/MaiorQueBit.bdf   ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/IgualMaiorMenor/MaiorQueBit.bdf   ;
+; IgualMaiorMenor/MaiorQueSinal.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/IgualMaiorMenor/MaiorQueSinal.bdf ;
+; IgualMaiorMenor/IgualdadeComp.bdf ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/IgualMaiorMenor/IgualdadeComp.bdf ;
+; SumESub/NegNum.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/NegNum.bdf                ;
+; SumESub/SumESub.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/SumESub.bdf               ;
+; IgualMaiorMenor/CompModulo.bdf    ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/IgualMaiorMenor/CompModulo.bdf    ;
+; SumESub/sinalSumESub.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/EC/2°/SD/Projeto 1/SumESub/sinalSumESub.bdf          ;
++-----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 58         ;
+;                                             ;            ;
+; Total combinational functions               ; 58         ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 40         ;
+;     -- 3 input functions                    ; 10         ;
+;     -- <=2 input functions                  ; 8          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 58         ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 33         ;
+; Maximum fan-out node                        ; S[2]~input ;
+; Maximum fan-out                             ; 16         ;
+; Total fan-out                               ; 259        ;
+; Average fan-out                             ; 2.09       ;
++---------------------------------------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                  ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                              ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+; |Geral                                 ; 58 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |Geral                                                                                           ; work         ;
+;    |Comparador:inst2|                  ; 9 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Comparador:inst2                                                                          ;              ;
+;       |IgualdadeComp:inst19|           ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Comparador:inst2|IgualdadeComp:inst19                                                     ;              ;
+;       |MaiorQueBit:inst27|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Comparador:inst2|MaiorQueBit:inst27                                                       ;              ;
+;       |MaiorQueBit:inst28|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Comparador:inst2|MaiorQueBit:inst28                                                       ;              ;
+;    |Mux6Bits:inst3|                    ; 22 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3                                                                            ;              ;
+;       |MuxBit:inst10|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst10                                                              ;              ;
+;       |MuxBit:inst11|                  ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst11                                                              ;              ;
+;       |MuxBit:inst6|                   ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst6                                                               ;              ;
+;       |MuxBit:inst7|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst7                                                               ;              ;
+;       |MuxBit:inst8|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst8                                                               ;              ;
+;       |MuxBit:inst9|                   ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|Mux6Bits:inst3|MuxBit:inst9                                                               ;              ;
+;    |MuxBool:inst|                      ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|MuxBool:inst                                                                              ;              ;
+;    |SumESub:inst1|                     ; 23 (2)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1                                                                             ;              ;
+;       |NegNum:inst7|                   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst7                                                                ; work         ;
+;          |Mux2x1_6Bits:inst|           ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst                                              ; work         ;
+;             |Mux2x1:inst7|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst7                                 ; work         ;
+;             |Mux2x1:inst8|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst8                                 ; work         ;
+;             |Mux2x1:inst9|             ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst7|Mux2x1_6Bits:inst|Mux2x1:inst9                                 ; work         ;
+;       |NegNum:inst|                    ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst                                                                 ;              ;
+;          |ComplementoDeDois:inst1|     ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1                                         ;              ;
+;             |Somador_e_Subtrator:inst| ; 1 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst                ;              ;
+;                |Somador:inst12|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12 ;              ;
+;       |Somador_e_Subtrator:inst2|      ; 12 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|Somador_e_Subtrator:inst2                                                   ;              ;
+;          |Somador:inst10|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst10                                    ;              ;
+;          |Somador:inst12|              ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst12                                    ;              ;
+;          |Somador:inst8|               ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst8                                     ;              ;
+;          |Somador:inst|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|Somador_e_Subtrator:inst2|Somador:inst                                      ;              ;
+;       |sinalSumESub:inst6|             ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|sinalSumESub:inst6                                                          ;              ;
+;          |Mux2x1:inst7|                ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Geral|SumESub:inst1|sinalSumESub:inst6|Mux2x1:inst7                                             ;              ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Apr 01 16:40:10 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_1 -c Projeto_1
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/comparador.bdf
+    Info: Found entity 1: Comparador
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/igualdade.bdf
+    Info: Found entity 1: Igualdade
+Info: Found 1 design units, including 1 entities, in source file opandexor/opand.bdf
+    Info: Found entity 1: OpAnd
+Info: Found 1 design units, including 1 entities, in source file opandexor/opxor.bdf
+    Info: Found entity 1: OpXor
+Info: Found 1 design units, including 1 entities, in source file sumesub/somador.bdf
+    Info: Found entity 1: Somador
+Info: Found 1 design units, including 1 entities, in source file sumesub/somador_e_subtrator.bdf
+    Info: Found entity 1: Somador_e_Subtrator
+Info: Found 1 design units, including 1 entities, in source file mux/muxbit.bdf
+    Info: Found entity 1: MuxBit
+Info: Found 1 design units, including 1 entities, in source file mux/muxbool.bdf
+    Info: Found entity 1: MuxBool
+Info: Found 1 design units, including 1 entities, in source file geral.bdf
+    Info: Found entity 1: Geral
+Info: Found 1 design units, including 1 entities, in source file sumesub/complementodedois.bdf
+    Info: Found entity 1: ComplementoDeDois
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/menorque.bdf
+    Info: Found entity 1: MenorQue
+Info: Found 1 design units, including 1 entities, in source file testealtera.bdf
+    Info: Found entity 1: testeAltera
+Info: Found 1 design units, including 1 entities, in source file sumesub/teste.bdf
+    Info: Found entity 1: teste
+Info: Found 1 design units, including 1 entities, in source file sumesub/mux2x1.bdf
+    Info: Found entity 1: Mux2x1
+Info: Found 1 design units, including 1 entities, in source file sumesub/mux2x1_6bits.bdf
+    Info: Found entity 1: Mux2x1_6Bits
+Info: Found 1 design units, including 1 entities, in source file mux/mux6bits.bdf
+    Info: Found entity 1: Mux6Bits
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/maiorquebit.bdf
+    Info: Found entity 1: MaiorQueBit
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/maiorquesinal.bdf
+    Info: Found entity 1: MaiorQueSinal
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/igualdadecomp.bdf
+    Info: Found entity 1: IgualdadeComp
+Info: Found 1 design units, including 1 entities, in source file sumesub/negnum.bdf
+    Info: Found entity 1: NegNum
+Info: Found 1 design units, including 1 entities, in source file sumesub/sumesub.bdf
+    Info: Found entity 1: SumESub
+Info: Found 1 design units, including 1 entities, in source file testarmux2x1.bdf
+    Info: Found entity 1: TESTARMUX2X1
+Info: Found 1 design units, including 1 entities, in source file igualmaiormenor/compmodulo.bdf
+    Info: Found entity 1: CompModulo
+Info: Found 1 design units, including 1 entities, in source file sumesub/testesoma.bdf
+    Info: Found entity 1: testeSOMA
+Info: Found 1 design units, including 1 entities, in source file sumesub/sinalsumesub.bdf
+    Info: Found entity 1: sinalSumESub
+Info: Found 1 design units, including 1 entities, in source file display/a2d.bdf
+    Info: Found entity 1: a2D
+Info: Found 1 design units, including 1 entities, in source file display/b2d.bdf
+    Info: Found entity 1: b2D
+Info: Elaborating entity "Geral" for the top level hierarchy
+Info: Elaborating entity "MuxBool" for hierarchy "MuxBool:inst"
+Info: Elaborating entity "Comparador" for hierarchy "Comparador:inst2"
+Info: Elaborating entity "MaiorQueSinal" for hierarchy "Comparador:inst2|MaiorQueSinal:inst41"
+Info: Elaborating entity "MaiorQueBit" for hierarchy "Comparador:inst2|MaiorQueBit:inst27"
+Info: Elaborating entity "IgualdadeComp" for hierarchy "Comparador:inst2|IgualdadeComp:inst19"
+Info: Elaborating entity "Mux6Bits" for hierarchy "Mux6Bits:inst3"
+Info: Elaborating entity "MuxBit" for hierarchy "Mux6Bits:inst3|MuxBit:inst6"
+Info: Elaborating entity "OpAnd" for hierarchy "OpAnd:inst15"
+Info: Elaborating entity "ComplementoDeDois" for hierarchy "ComplementoDeDois:inst13"
+Info: Elaborating entity "Somador_e_Subtrator" for hierarchy "ComplementoDeDois:inst13|Somador_e_Subtrator:inst"
+Info: Elaborating entity "Somador" for hierarchy "ComplementoDeDois:inst13|Somador_e_Subtrator:inst|Somador:inst12"
+Info: Elaborating entity "SumESub" for hierarchy "SumESub:inst1"
+Info: Elaborating entity "sinalSumESub" for hierarchy "SumESub:inst1|sinalSumESub:inst6"
+Info: Elaborating entity "Mux2x1" for hierarchy "SumESub:inst1|sinalSumESub:inst6|Mux2x1:inst7"
+Info: Elaborating entity "CompModulo" for hierarchy "SumESub:inst1|sinalSumESub:inst6|CompModulo:inst5"
+Info: Elaborating entity "NegNum" for hierarchy "SumESub:inst1|NegNum:inst"
+Info: Elaborating entity "Mux2x1_6Bits" for hierarchy "SumESub:inst1|NegNum:inst|Mux2x1_6Bits:inst"
+Info: Elaborating entity "OpXor" for hierarchy "OpXor:inst12"
+Info: Timing-Driven Synthesis is running
+Info: Implemented 91 device resources after synthesis - the final resource count might be different
+    Info: Implemented 13 input pins
+    Info: Implemented 20 output pins
+    Info: Implemented 58 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 227 megabytes
+    Info: Processing ended: Fri Apr 01 16:40:12 2022
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

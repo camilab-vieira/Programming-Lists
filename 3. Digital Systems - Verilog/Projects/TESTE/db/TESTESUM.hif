@@ -1,0 +1,288 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+TESTESUM
+# storage
+db|TESTESUM.(0).cnf
+db|TESTESUM.(0).cnf
+# case_insensitive
+# source_file
+testesum.bdf
+233158d14ae46fa7860f6a39bcc8583
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+NegNum
+# storage
+db|TESTESUM.(1).cnf
+db|TESTESUM.(1).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|negnum.bdf
+b9cd298ae238f1a5b6db46024b5b7e6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5
+NegNum:inst
+NegNum:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1_6Bits
+# storage
+db|TESTESUM.(2).cnf
+db|TESTESUM.(2).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|mux2x1_6bits.bdf
+29d7e77af1ebd1f87cb27454053b32d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5|Mux2x1_6Bits:inst
+NegNum:inst|Mux2x1_6Bits:inst
+NegNum:inst3|Mux2x1_6Bits:inst
+}
+# macro_sequence
+
+# end
+# entity
+Mux2x1
+# storage
+db|TESTESUM.(3).cnf
+db|TESTESUM.(3).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|mux2x1.bdf
+b0fb256d52b4c7c4bdd3e41a2f4d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5|Mux2x1_6Bits:inst|Mux2x1:inst6
+NegNum:inst5|Mux2x1_6Bits:inst|Mux2x1:inst7
+NegNum:inst5|Mux2x1_6Bits:inst|Mux2x1:inst8
+NegNum:inst5|Mux2x1_6Bits:inst|Mux2x1:inst9
+NegNum:inst5|Mux2x1_6Bits:inst|Mux2x1:inst11
+NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst6
+NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst7
+NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst8
+NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst9
+NegNum:inst|Mux2x1_6Bits:inst|Mux2x1:inst11
+NegNum:inst3|Mux2x1_6Bits:inst|Mux2x1:inst6
+NegNum:inst3|Mux2x1_6Bits:inst|Mux2x1:inst7
+NegNum:inst3|Mux2x1_6Bits:inst|Mux2x1:inst8
+NegNum:inst3|Mux2x1_6Bits:inst|Mux2x1:inst9
+NegNum:inst3|Mux2x1_6Bits:inst|Mux2x1:inst11
+Mux2x1:inst6
+}
+# macro_sequence
+
+# end
+# entity
+ComplementoDeDois
+# storage
+db|TESTESUM.(4).cnf
+db|TESTESUM.(4).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|complementodedois.bdf
+94ac806ca615b74c05886f49f636a2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5|ComplementoDeDois:inst1
+NegNum:inst|ComplementoDeDois:inst1
+NegNum:inst3|ComplementoDeDois:inst1
+}
+# macro_sequence
+
+# end
+# entity
+Somador
+# storage
+db|TESTESUM.(5).cnf
+db|TESTESUM.(5).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|somador.bdf
+bfdc28d02485e8b317f2753aeaa5ace
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5|ComplementoDeDois:inst1|Somador:inst5
+NegNum:inst5|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+NegNum:inst5|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+NegNum:inst5|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+NegNum:inst5|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+Somador_e_Subtrator:inst2|Somador:inst12
+Somador_e_Subtrator:inst2|Somador:inst10
+Somador_e_Subtrator:inst2|Somador:inst8
+Somador_e_Subtrator:inst2|Somador:inst
+NegNum:inst|ComplementoDeDois:inst1|Somador:inst5
+NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+NegNum:inst3|ComplementoDeDois:inst1|Somador:inst5
+NegNum:inst3|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst12
+NegNum:inst3|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst10
+NegNum:inst3|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst8
+NegNum:inst3|ComplementoDeDois:inst1|Somador_e_Subtrator:inst|Somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+Somador_e_Subtrator
+# storage
+db|TESTESUM.(6).cnf
+db|TESTESUM.(6).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|sumesub|somador_e_subtrator.bdf
+d776a73d2431d43272edfa863ac3d7de
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NegNum:inst5|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+Somador_e_Subtrator:inst2
+NegNum:inst|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+NegNum:inst3|ComplementoDeDois:inst1|Somador_e_Subtrator:inst
+}
+# macro_sequence
+
+# end
+# entity
+Comparador
+# storage
+db|TESTESUM.(7).cnf
+db|TESTESUM.(7).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|igualmaiormenor|comparador.bdf
+4b97dd4136746c1289c0f7a338f8b72
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst8
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQueSinal
+# storage
+db|TESTESUM.(8).cnf
+db|TESTESUM.(8).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|igualmaiormenor|maiorquesinal.bdf
+1524389eacf233198e4d6ab51bcbfd9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst8|MaiorQueSinal:inst
+}
+# macro_sequence
+
+# end
+# entity
+MaiorQueBit
+# storage
+db|TESTESUM.(9).cnf
+db|TESTESUM.(9).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|igualmaiormenor|maiorquebit.bdf
+26268b8a5772629396a35123f20cb7c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst8|MaiorQueBit:inst4
+Comparador:inst8|MaiorQueBit:inst3
+Comparador:inst8|MaiorQueBit:inst2
+Comparador:inst8|MaiorQueBit:inst1
+}
+# macro_sequence
+
+# end
+# entity
+IgualdadeComp
+# storage
+db|TESTESUM.(10).cnf
+db|TESTESUM.(10).cnf
+# case_insensitive
+# source_file
+|documents|ec|2院sd|projeto 1|igualmaiormenor|igualdadecomp.bdf
+cdce86f664d06b2afb7fa0c25d8a1970
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador:inst8|IgualdadeComp:inst5
+}
+# macro_sequence
+
+# end
+# complete
+
